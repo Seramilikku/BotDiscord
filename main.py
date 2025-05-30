@@ -18,7 +18,7 @@ async def nya(ctx):
 
 #pertanyaan random bot    
 @client.command()
-async def yuira(ctx, *, question):
+async def yuira(ctx, *, question="..."):
     with open("responses.txt", "r") as f:
         random_responses = f.readlines()
         response = random.choice(random_responses)
